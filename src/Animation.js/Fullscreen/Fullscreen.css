@@ -1,0 +1,13 @@
+.fullscreen{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    scroll-snap-type:y mandatory;
+}
+.fullscreen .section{
+ 
+    scroll-snap-align: start;
+    background-blend-mode: multiply;
+}

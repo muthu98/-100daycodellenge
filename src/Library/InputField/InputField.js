@@ -1,13 +1,13 @@
 import React, { useEffect, useRef, useState } from 'react'
 import './InputField.css'
 function InputField({ type, id, name, label, placeholder, value, color, variants,onChange}) {
-    const [coloreffect, ] = useState('#4a70ec')
+    const [coloreffect, setcoloreffect] = useState('#4a70ec')
     const containerref = useRef()
     const labelrref = useRef()
     const inputerref = useRef()
     useEffect(() => {
-        document.addEventListener("click", clickFunction);
-    
+        // document.addEventListener("click", clickFunction);
+        if(color) setcoloreffect(color)
         var label = document.getElementById(name + "1")
         if (variants === "Outline") {
             containerref.current.classList.remove('inputfieldcontainer')

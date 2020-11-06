@@ -10,7 +10,7 @@ function Forms() {
     }
     return (
         <div className="card" >
-            <InputField type="text" id="username" name="username" label="UserName" variants="Outline" onChange={handelvalue} />
+            <InputField type="text" id="username" name="username" label="UserName" variants="Outline" onChange={handelvalue}  color={"red"}/>
             <InputField type="password" id="password" name="password" label="PassWord" onChange={handelvalue} variants="Outline" />
             <InputField type="date" id="datevalue" name="datevalue" label="DateofBirth" variants="Outline" onChange={handelvalue} />
 
